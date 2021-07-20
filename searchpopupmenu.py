@@ -16,7 +16,7 @@ class SearchPopupMenu(MDInputDialog):
         self.geocode_get_lat_lon(address)
 
     def geocode_get_lat_lon(self,address):
-        api_key = "_fl7y_e_alaFUrMhpOBrEOZMbYL9HsVXxSAMsjW1E2Q"
+        api_key = "FY4XL_UOULxB5-EDY-b2g9tde0cEtR7UhrBI9juRbss"
         address = parse.quote(address)
         url = "https://geocoder.ls.hereapi.com/6.2/geocode.json?searchtext=%s&apiKey=%s"%(address,api_key)
         UrlRequest(url,on_success=self.success, on_failure=self.failure, on_error=self.error)
