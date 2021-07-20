@@ -20,7 +20,7 @@ class FarmersMapView(MapView):
         # Get reference to main app and the database cursor
         min_lat, min_lon, max_lat, max_lon = self.get_bbox()
         app = App.get_running_app()
-        sql_statement = "SELECT * FROM table11 WHERE x > %s AND x < %s AND y > %s AND y < %s" % (min_lat,max_lat, min_lon, max_lon)
+        sql_statement = "SELECT * FROM lang WHERE x > %s AND x < %s AND y > %s AND y < %s" % (min_lat,max_lat, min_lon, max_lon)
         app.cursor.execute(sql_statement)
         markets = app.cursor.fetchall()
         print(markets)
@@ -41,3 +41,6 @@ class FarmersMapView(MapView):
         # Keep track of the marker's name
         name = market[1]
         self.market_names.append(name)
+
+
+
