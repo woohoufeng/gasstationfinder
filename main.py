@@ -1,8 +1,17 @@
+import kivy
 from kivymd.app import MDApp
 from farmersmapview import FarmersMapView
 import sqlite3
 import mysql.connector
 from searchpopupmenu import SearchPopupMenu
+from kivy.core.window import Window
+
+# Window.size = (375, 750)
+import certifi
+import os
+os.environ['SSL_CERT_FILE'] = certifi.where()
+
+
 class MainApp(MDApp):
     connection = None
     cursor = None
@@ -31,4 +40,5 @@ class MainApp(MDApp):
         # Instantiate SearchPopupMenu
         self.search_menu = SearchPopupMenu()
 MainApp().run()
+
 
