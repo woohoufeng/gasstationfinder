@@ -40,5 +40,3 @@ class MainApp(MDApp):
         # Instantiate SearchPopupMenu
         self.search_menu = SearchPopupMenu()
 MainApp().run()
-
-
