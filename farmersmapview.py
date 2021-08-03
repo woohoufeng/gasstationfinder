@@ -43,4 +43,3 @@ class FarmersMapView(MapView):
         self.market_names.append(name)
 
 
-
