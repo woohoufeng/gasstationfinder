@@ -41,5 +41,3 @@ class FarmersMapView(MapView):
         # Keep track of the marker's name
         name = market[1]
         self.market_names.append(name)
-
-
