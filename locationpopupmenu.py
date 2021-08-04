@@ -1,4 +1,4 @@
-from kivymd.uix.dialog import ListMDDialog
+from dialog import ListMDDialog
 
 class LocationPopupMenu(ListMDDialog):
     def __init__(self, market_data):
